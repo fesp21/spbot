@@ -1,0 +1,14 @@
+var mongoose = require(mongoose);
+var Schema = mongoose.Schema;
+
+var MovieSchema = new Schema({
+  user_id: {type: String},
+  title: {type: String},
+  plot: {typs: String},
+  date: {type: String},
+  runtime: {type: String},
+  director: {type: String},
+  poster_url: {type: String}
+});
+
+module.exports = mongoose.model("Movie", MovieSchema);
